@@ -6,3 +6,4 @@
 - Use M or G for human-facing parameter counts. Preserve precision in machine-readable evidence.
 - Recorded playback must not be labeled live inference. No training or evaluation is needed to update presentation materials.
 - Do not deploy a public site or change visibility without explicit user authorization.
+- Pages workflow is prepared for later owner-initiated publication and skips deployment while the repository is private. Do not remove this guard or enable Pages now.
