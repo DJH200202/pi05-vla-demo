@@ -10,9 +10,10 @@
 
 1. **[直接播放 60 秒概览](#60-秒概览)**：在本页播放器中观看，无需下载。
 2. **查看下方结果与训练曲线**：了解任务规模、模块更新范围和关键发现。
-3. **打开交互 Demo**：下载本仓库 ZIP，解压后双击根目录 `index.html`；无需 GPU、无需安装依赖。
+3. **[打开项目主页](https://djh200202.github.io/pi05-vla-demo/)**：直接查看交互曲线、方案对比和闭环回放，无需 GPU。
+4. **[查看代码与复现记录](https://github.com/DJH200202/pi05-vla-adaptation-lab)**：数据处理、训练、评估和完整实验记录。
 
-> 本仓库保持 **private**，面试官接受邀请并登录 GitHub 后即可查看本页视频和图表。交互页面可下载后本地打开；Pages 发布配置仅为后续准备，目前未发布公网网站，详见 [在线发布步骤](PUBLISH.md)。
+> 本项目现公开展示。简历只需放一个链接：**[项目主页](https://djh200202.github.io/pi05-vla-demo/)**；页面中可进入完整代码仓库。部署维护见 [发布说明](PUBLISH.md)。
 
 ## 60 秒概览
 
@@ -23,7 +24,7 @@ https://github.com/user-attachments/assets/079d127f-0cc8-4805-b1f1-3da1251bd598
 [概览视频源文件](overview.mp4) · [交互页面使用方式](#交互页面使用方式)
 
 <details>
-<summary>交互页面预览（下载后可本地打开）</summary>
+<summary>交互页面预览</summary>
 
 ![交互 Demo 预览](preview.jpg)
 

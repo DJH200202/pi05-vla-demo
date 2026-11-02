@@ -14,7 +14,7 @@ concurrency:
 
 jobs:
   deploy:
-    # The owner explicitly wants privacy first. A private repository never deploys.
+    # Public release authorized by the owner; private repositories still never deploy.
     if: ${{ github.event.repository.private == false }}
     runs-on: ubuntu-latest
     permissions:
