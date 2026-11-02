@@ -42,6 +42,8 @@ LoRA 覆盖 Attention 与 FFN；语言侧 rank=16，动作侧 rank=32。动作/�
 
 [放大查看高清图](assets/charts/module-adaptation.png) · [矢量图 SVG](assets/charts/module-adaptation.svg)
 
+[交互查看 A–E 的独立架构图](https://djh200202.github.io/pi05-vla-demo/#architecture)：切换冻结、LoRA 与原权重更新范围，支持放大浏览和 SVG 下载。A–D 同步展示本轮参数量与评估成绩；E 仅展示方案，明确标注本轮暂缓。
+
 | 方案 | 更新范围 | 可训练参数 | 成功回合 | 成功率 |
 |---|---|---:|---:|---:|
 | Base | 原始 π0.5 基础权重，未微调 | 0 | 0/500 | 0.0% |

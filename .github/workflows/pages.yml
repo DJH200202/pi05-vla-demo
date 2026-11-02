@@ -31,7 +31,7 @@ jobs:
       - name: Package the static demo
         run: |
           mkdir _site
-          cp index.html methods.html style.css app.js overview.mp4 preview.jpg media-manifest.json README.md METHODS.md _site/
+          cp index.html methods.html style.css app.js architecture.js overview.mp4 preview.jpg media-manifest.json README.md METHODS.md _site/
           cp -R assets media results _site/
           touch _site/.nojekyll
           sed -i 's/PRIVATE INTERVIEW DEMO/INTERVIEW DEMO/g' _site/index.html

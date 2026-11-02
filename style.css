@@ -2,3 +2,64 @@
 @media(max-width:1050px){.private{display:none}.nav{gap:15px}.nav nav{gap:15px}main{padding:0 28px}.hero{gap:30px}.hero h1{font-size:38px}.hero-insight strong{font-size:38px}.flow article{padding:16px}.hero{padding-top:45px}.section-head{gap:25px}.players{gap:10px}.player-head{padding:10px}.study-layout{grid-template-columns:170px 1fr;gap:25px}}
 @media(max-width:720px){.nav{height:auto;min-height:65px;padding:10px 18px;flex-wrap:wrap;gap:7px}.nav nav{width:100%;justify-content:space-between;gap:10px;font-size:11px}.brand{font-size:24px}main{padding:0 18px}.hero{grid-template-columns:1fr;padding-top:35px;gap:28px}.hero h1{font-size:39px}.hero-image{max-width:540px}.metrics{grid-template-columns:repeat(2,1fr);gap:22px}.metrics>div:nth-child(3){border-left:0;padding-left:0}.metrics strong{font-size:26px}.section-head{display:block}.section-head>p{width:auto;margin-top:15px}.flow{grid-template-columns:repeat(2,1fr)}h2{font-size:25px}.chart-card,.figure-browser{padding:14px}.toolbar{gap:12px}.canvas-wrap{height:280px}.insight-grid,.insight-grid.three{grid-template-columns:1fr}.players{grid-template-columns:1fr}.player video{max-height:340px}.case-header{display:block}.learning-callout{display:block;padding:25px!important}.learning-callout .button{margin-top:16px}.slider-row{gap:10px}.slider-row label{font-size:10px}td,th{padding:12px;font-size:12px}.study-layout{display:block}.study-nav{position:static;display:flex;flex-wrap:wrap;gap:12px}.study-nav a{padding:0}.section-head .eyebrow{margin-bottom:10px}section[id]{padding-top:45px}}
 @media(prefers-reduced-motion:reduce){html{scroll-behavior:auto}}
+
+/* Architecture explorer: retain a large diagram and keep the five recipes adjacent. */
+.architecture{margin-top:42px;scroll-margin-top:110px}
+.architecture-head{display:flex;align-items:flex-end;gap:36px;margin-bottom:22px}
+.architecture-head>div{flex:1}.architecture-head .eyebrow{margin-bottom:8px}
+.architecture-head h3{font-size:25px;letter-spacing:-.5px;margin:0}
+.architecture-head>p{max-width:370px;font-size:13px;color:var(--muted);margin:0}
+.architecture-tabs{display:grid;grid-template-columns:repeat(5,minmax(0,1fr));gap:8px;margin-bottom:14px}
+.architecture-tabs button{display:flex;align-items:center;flex-wrap:wrap;gap:5px 9px;min-height:64px;padding:12px 14px;text-align:left;background:white;border:1px solid var(--line);border-radius:9px;color:var(--muted);cursor:pointer}
+.architecture-tabs b{font-size:18px;color:var(--ink)}.architecture-tabs span{font-size:12px;line-height:1.5}
+.architecture-tabs small{font-size:10px;line-height:1.4;flex-basis:100%;padding-left:22px}
+.architecture-tabs button:hover{border-color:#8eaaa9}
+.architecture-tabs [aria-selected="true"]{background:var(--ink);border-color:var(--ink);color:white}
+.architecture-tabs [aria-selected="true"] b{color:white}
+.architecture-panel{overflow:hidden;background:white;border:1px solid var(--line);border-radius:12px}
+.architecture-summary{display:grid;grid-template-columns:minmax(0,1fr) auto;gap:32px;padding:24px 28px;align-items:start}
+.architecture-summary h4{font-size:20px;line-height:1.5;margin:0 0 8px}
+.architecture-summary p{font-size:13px;color:var(--muted);margin:0;max-width:710px;min-height:46px}
+.architecture-summary dl{display:flex;gap:28px;margin:0;padding-top:3px}
+.architecture-summary dt{font-size:11px;color:var(--muted);margin-bottom:5px}
+.architecture-summary dd{margin:0;font-size:22px;line-height:1.4;font-weight:650;white-space:nowrap;font-variant-numeric:tabular-nums}
+.architecture-summary dd small{display:block;font-size:11px;font-weight:400;color:var(--muted)}
+.architecture-image-button{position:relative;display:block;width:100%;padding:0;border:0;background:#f5f0e5;cursor:zoom-in}
+.architecture-image-button img{display:block;width:100%;height:auto;max-width:1020px;margin:auto}
+.architecture-zoom-hint{position:absolute;right:18px;bottom:16px;padding:6px 12px;border:1px solid #d3d1c3;background:#fffef8eb;border-radius:6px;color:#344b52;font-size:11px}
+.architecture-figure figcaption{padding:17px 28px;border-top:0;font-size:12px;line-height:1.8}
+.architecture-figure figcaption>span{max-width:850px}
+.architecture-figure figcaption a{align-self:flex-start}
+.architecture-legend{display:flex;flex-wrap:wrap;gap:8px 24px;padding:0 28px 20px;font-size:11px;color:var(--muted)}
+.architecture-legend span{display:inline-flex;align-items:center;gap:7px}
+.architecture-legend i{display:inline-block;width:11px;height:11px;border-radius:3px}
+.architecture-legend .frozen{background:#74848a}.architecture-legend .lora{background:#b86c20}.architecture-legend .full{background:#247865}
+.architecture-note a{color:var(--teal);white-space:nowrap}
+.scope-architecture{display:inline-block;padding:3px 0 3px 14px;min-height:32px;border:0;background:none;color:var(--teal);font-size:11px;white-space:nowrap;cursor:pointer}
+.scope-architecture:hover{text-decoration:underline;text-underline-offset:4px}
+.architecture-dialog{padding:0;width:min(1280px,calc(100vw - 48px));max-width:none;max-height:92dvh;border:1px solid var(--line);border-radius:14px;background:white;color:var(--ink);box-shadow:0 24px 100px #0d203a40}
+.architecture-dialog::backdrop{background:#152435b3;backdrop-filter:blur(5px)}
+.architecture-dialog[open]{display:flex;flex-direction:column}
+.architecture-dialog-head{display:flex;align-items:center;justify-content:space-between;gap:20px;padding:16px 22px;flex-shrink:0}
+.architecture-dialog-head h2{font-size:19px;line-height:1.4;letter-spacing:0}
+.architecture-dialog-head>div{display:flex;gap:8px;flex-shrink:0}
+.architecture-dialog-head button{min-height:40px;padding:8px 13px;font-size:12px;cursor:pointer;background:#f0f3f6;border:1px solid var(--line);border-radius:7px;color:var(--ink)}
+.architecture-dialog-canvas{overflow:auto;min-height:0;background:#f5f0e5;overscroll-behavior:contain}
+.architecture-dialog-canvas img{display:block;width:100%;height:auto}
+.architecture-dialog.is-zoomed .architecture-dialog-canvas img{width:max(100%,1500px);max-width:none}
+.architecture-dialog>p{padding:12px 22px;margin:0;color:var(--muted);font-size:11px;flex-shrink:0}
+body.architecture-modal-open{overflow:hidden}
+@media(max-width:1050px){
+  .architecture-summary{grid-template-columns:1fr;gap:18px}.architecture-summary dl{gap:40px}.architecture-summary dd small{display:inline;margin-left:7px}
+  .architecture-tabs button{padding:10px}.architecture-head{gap:24px}.architecture-head>p{max-width:310px}
+}
+@media(max-width:720px){
+  .architecture{margin-top:30px;scroll-margin-top:110px}.architecture-head{display:block}.architecture-head h3{font-size:22px}.architecture-head>p{max-width:none;margin-top:12px}
+  .architecture-tabs{gap:6px}.architecture-tabs button{padding:10px 4px;min-height:94px;align-content:start;justify-content:center;text-align:center;gap:5px}.architecture-tabs b{width:100%;font-size:18px}.architecture-tabs span{font-size:11px}.architecture-tabs small{font-size:9px;padding-left:0}
+  .architecture-summary{padding:18px;gap:16px}.architecture-summary h4{font-size:18px}.architecture-summary p{min-height:0}.architecture-summary dl{justify-content:space-between;gap:12px}.architecture-summary dd{font-size:20px}.architecture-summary dd small{font-size:10px;display:block;margin-left:0}
+  .architecture-zoom-hint{right:8px;bottom:7px;padding:4px 8px;font-size:10px}
+  .architecture-figure figcaption{padding:14px 18px;display:block}.architecture-figure figcaption a{display:inline-block;margin-top:9px;min-height:32px}
+  .architecture-legend{padding:0 18px 16px;gap:8px 14px;font-size:10px}
+  .scope-architecture{display:block;padding:5px 0;min-height:36px}
+  .architecture-dialog{width:calc(100vw - 20px);max-height:94dvh;border-radius:10px}.architecture-dialog-head{padding:14px;flex-wrap:wrap;gap:12px}.architecture-dialog-head h2{font-size:17px;width:100%}.architecture-dialog-head>div{width:100%;justify-content:space-between}.architecture-dialog-head button{min-height:44px}.architecture-dialog>p{padding:10px 14px}
+}
