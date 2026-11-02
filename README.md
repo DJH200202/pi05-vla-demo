@@ -33,6 +33,14 @@ https://github.com/user-attachments/assets/079d127f-0cc8-4805-b1f1-3da1251bd598
 
 全部模型使用同一套官方 LIBERO Spatial 10 任务 × 50 初态与控制协议；每组 500 回合，运行错误数均为 0。
 
+![π0.5 模块适配总览：上方展示双相机、视觉语言前缀与动作专家的连接；下方对比 Base 与 A–D 的冻结、LoRA 和原参数更新范围，以及可训练参数和闭环成功率。](assets/charts/module-adaptation.svg)
+
+**灰色＝冻结原参数；橙色支路＝只训练 LoRA；绿色＝直接更新原参数。** A→B 增加视觉语言侧 LoRA，B→C 放开视觉与动作/时间接口，C→D 将动作专家从 LoRA 改为原权重全量更新。各组独立从同一基础权重训练，这些箭头表示方案差异，不是顺序接续训练。
+
+LoRA 覆盖 Attention 与 FFN；语言侧 rank=16，动作侧 rank=32。动作/时间接口包括动作输入、输出投影和时间 MLP；视觉语言主干同时处理图像与指令 token。更多细节见[项目方法](METHODS.md#模型适配)。
+
+[放大查看高清图](assets/charts/module-adaptation.png) · [矢量图 SVG](assets/charts/module-adaptation.svg)
+
 | 方案 | 更新范围 | 可训练参数 | 成功回合 | 成功率 |
 |---|---|---:|---:|---:|
 | Base | 原始 π0.5 基础权重，未微调 | 0 | 0/500 | 0.0% |
